@@ -34,7 +34,7 @@ const AGENT_FOLLOWUP = `Here's a brief summary of clients we've helped multiple 
    **Vesper IoT Gateway:** 1 case (ELEC25-00119) — RJ45 ESD events causing link drops  
    **Success Metrics:**  
    - All cases closed within 2–3 days  
-   - Positive feedback: “Rapid, clear fix—much appreciated”  
+   - Positive feedback: "Rapid, clear fix—much appreciated"  
    **Opportunity:** Standardize on our **power integrity upgrade kit** across controller SKUs  
    **Key Contact:** **Mara Keller** (ce.aurora@nebulacircuits.example)
 
@@ -58,8 +58,8 @@ const AGENT_FOLLOWUP = `Here's a brief summary of clients we've helped multiple 
 - 24/7 technical support with global coverage
 
 **Value Proposition for Repeat Clients**  
-- **Nebula Circuits:** “Prevent repeat resets with a standardized power integrity kit.”  
-- **Orion Embedded:** “Reduce field returns via EMI/ESD hardening and connector reliability upgrades.”
+- **Nebula Circuits:** "Prevent repeat resets with a standardized power integrity kit."  
+- **Orion Embedded:** "Reduce field returns via EMI/ESD hardening and connector reliability upgrades."
 
 **Recommended Next Steps**  
 - Engage platform managers for preventive service agreements  
