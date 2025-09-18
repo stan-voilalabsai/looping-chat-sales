@@ -451,7 +451,7 @@ export default function LoopingChatInterface() {
                       </div>
                     ) : (
                       <div className="text-base leading-relaxed">
-                        {agentFollowupText}
+                        {formatMessage(agentFollowupText)}
                         {showCursor && cursorType === "agent" && (
                           <span className="typing-cursor ml-1 font-mono">|</span>
                         )}
