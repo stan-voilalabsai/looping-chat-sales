@@ -28,7 +28,7 @@ const AGENT_FOLLOWUP = `Here's a brief summary of clients we've helped multiple 
 
 **TOP REPEAT CLIENTS FOR SALES OUTREACH**
 
-1. **NEBULA CIRCUITS GmbH** 🎯 **HIGH PRIORITY**  
+1. **NEBULA CIRCUITS GmbH** **HIGH PRIORITY**  
    **Activity:** 3 product lines, 4 technical cases (Jun 2025)  
    **Aurora-2 Controller:** 2 incidents (ELEC25-00110 & ELEC25-00129) — intermittent resets from noisy 5 V rail  
    **Vesper IoT Gateway:** 1 case (ELEC25-00119) — RJ45 ESD events causing link drops  
@@ -38,7 +38,7 @@ const AGENT_FOLLOWUP = `Here's a brief summary of clients we've helped multiple 
    **Opportunity:** Standardize on our **power integrity upgrade kit** across controller SKUs  
    **Key Contact:** **Mara Keller** (ce.aurora@nebulacircuits.example)
 
-2. **ORION EMBEDDED LABS Pvt Ltd** 🎯 **MEDIUM PRIORITY**  
+2. **ORION EMBEDDED LABS Pvt Ltd** **MEDIUM PRIORITY**  
    **Activity:** 2 platforms, 2 technical cases (Jun 2025)  
    **Helios-B Wearable:** PMIC brownouts under BT TX bursts (ELEC25-00124)  
    **Strata-Edge Module:** USB-C connector intermittents from fretting (ELEC25-00125)  
