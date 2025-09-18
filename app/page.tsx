@@ -4,21 +4,23 @@ import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 // Chat content constants
-const USER_MESSAGE = "What is the EBITDA of Acme Corp for Q1 2024? What challenges did the company face?"
+const USER_MESSAGE = "I have a new case with a small power board making the 5 V line noisy, and the controller keeps rebooting. Can you retrieve a similar case and explain how we solved it?"
 
-const AGENT_MESSAGE = `**Acme Corp Q1 2024 — EBITDA and Key Challenges**  
+const AGENT_MESSAGE = `**ORBITAL KESTREL — Noisy 5 V Line Causing Resets (ELEC25-00342)**  
 **Answer:**  
-- **EBITDA (Q1 2024):** -1.02 mCHF (Swiss GAAP FER, consolidated).  
-- The quarter shows a negative EBITDA margin of about **-5.8%** on sales, consistent with the Q1 reporting pack.  
+- **Issue:** Device rebooted whenever the load changed quickly.  
+- **Root cause:** Worn-out smoothing parts (capacitors) and a noisy return path near where voltage was measured.  
+- **What we did:** Replaced the old capacitors with fresh, higher-capacity ones; measured power right at the load with tidier wiring; added a small noise filter; and raised the power-up threshold so it waits for a healthy supply.  
+- **Result:** Reboots stopped and the 5 V line stayed stable.  
+- **Time to fix:** ~2 days (June 16–18, 2025).  
 
-**Main challenges (Q1 2024):**  
-- **Seasonality/weather effects:** Q1 is the most weather-driven quarter (late project starts, slower construction site ramp-up).  
-- **Resource factors:** vacation/overhours in January impacting utilization and productivity.  
-- **Revenue shortfall vs. budget:** sales at **18.2 mCHF**, ~**6.8%** below budget in Q1.  
+**What usually works for this kind of problem:**  
+- **Check:** Watch the 5 V line while changing the load; inspect capacitors for aging.  
+- **Fixes:** Swap in fresh/bigger capacitors near the load; shorten/clean up power and ground paths; add a simple filter for sharp switching noise; set a slightly higher start-up threshold.  
+- **Follow-up:** Run hot for a few hours under heavy load to confirm no more resets.  
 
-**Sources:**  
-- 20240430 Acme Corp Schweiz Gruppe — Reporting Swiss GAAP FER Q1.2024.pdf, page 3  
-- 20240512 Acme Corp Gruppe — Reporting Swiss GAAP FER Q1.pdf, page 3`
+**Source:**  
+- Case_ELEC25-00342_ORBITAL_KESTREL.pdf (Jun 2025)`
 
 const USER_FOLLOWUP = "Thank you. Please send these data to ceo@ourfund.com"
 
