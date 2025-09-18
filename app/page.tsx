@@ -22,9 +22,57 @@ const AGENT_MESSAGE = `**ORBITAL KESTREL — Noisy 5 V Line Causing Resets (ELEC
 **Source:**  
 - Case_ELEC25-00342_ORBITAL_KESTREL.pdf (Jun 2025)`
 
-const USER_FOLLOWUP = "Thank you. Please send these data to ceo@ourfund.com"
+const USER_FOLLOWUP = "What clients did we help multiple times lately? Please prepare a brief summary for the sales team to pitch them"
 
-const AGENT_FOLLOWUP = "Done! I've sent the EBITDA analysis and Q1 2024 challenges summary to ceo@ourfund.com."
+const AGENT_FOLLOWUP = `Here's a brief summary of clients we've helped multiple times recently — prime targets for sales expansion:
+
+**TOP REPEAT CLIENTS FOR SALES OUTREACH**
+
+1. **NEBULA CIRCUITS GmbH** 🎯 **HIGH PRIORITY**  
+   **Activity:** 3 product lines, 4 technical cases (Jun 2025)  
+   **Aurora-2 Controller:** 2 incidents (ELEC25-00110 & ELEC25-00129) — intermittent resets from noisy 5 V rail  
+   **Vesper IoT Gateway:** 1 case (ELEC25-00119) — RJ45 ESD events causing link drops  
+   **Success Metrics:**  
+   - All cases closed within 2–3 days  
+   - Positive feedback: “Rapid, clear fix—much appreciated”  
+   **Opportunity:** Standardize on our **power integrity upgrade kit** across controller SKUs  
+   **Key Contact:** **Mara Keller** (ce.aurora@nebulacircuits.example)
+
+2. **ORION EMBEDDED LABS Pvt Ltd** 🎯 **MEDIUM PRIORITY**  
+   **Activity:** 2 platforms, 2 technical cases (Jun 2025)  
+   **Helios-B Wearable:** PMIC brownouts under BT TX bursts (ELEC25-00124)  
+   **Strata-Edge Module:** USB-C connector intermittents from fretting (ELEC25-00125)  
+   **Success Metrics:**  
+   - Both cases resolved in 2–3 days  
+   - Mixed RF and high-speed I/O issues handled successfully  
+   **Opportunity:** Fleet-wide **EMI/ESD design review** and connector reliability program  
+   **Key Contact:** **Platform Leads via orionembedded.example**
+
+---
+
+**SALES PITCH HIGHLIGHTS**
+
+**Proven Track Record**  
+- 100% case resolution rate  
+- Average resolution time: 2–3 days  
+- 24/7 technical support with global coverage
+
+**Value Proposition for Repeat Clients**  
+- **Nebula Circuits:** “Prevent repeat resets with a standardized power integrity kit.”  
+- **Orion Embedded:** “Reduce field returns via EMI/ESD hardening and connector reliability upgrades.”
+
+**Recommended Next Steps**  
+- Engage platform managers for preventive service agreements  
+- Propose bulk purchase of **PI upgrade kits** and **ESD protection packs**  
+- Offer short **power/EMI troubleshooting workshops** for engineering teams
+
+**Sources:**  
+- Case_ELEC25-00110_Aurora2_Reset.pdf  
+- Case_ELEC25-00129_Aurora2_Reset_Recurrent.pdf  
+- Case_ELEC25-00119_Vesper_LinkDrop_ESD.pdf  
+- Case_ELEC25-00124_HeliosB_Brownout.pdf  
+- Case_ELEC25-00125_StrataEdge_USBIntermittent.pdf`
+
 
 // Animation states
 type AnimationState =
