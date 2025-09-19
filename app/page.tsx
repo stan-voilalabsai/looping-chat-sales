@@ -89,12 +89,12 @@ type AnimationState =
 // Timing constants (in milliseconds)
 const TIMINGS = {
   intro: 300,
-  userTyping: 2755, // ~22 chars/sec for user message (1.5x faster again)
+  userTyping: 3000, // ~22 chars/sec for user message (1.5x faster again)
   agentThinking: 2000, // exactly 2 seconds
   agentTyping: 9000, // ~22 chars/sec for agent message (1.5x faster)
-  userFollowup: 1667, // typing time for follow-up user message (1.5x faster)
-  agentFollowupThinking: 1500, // thinking time for follow-up
-  agentFollowupTyping: 2667, // typing time for follow-up agent message (1.5x faster)
+  userFollowup: 2000, // typing time for follow-up user message (1.5x faster)
+  agentFollowupThinking: 2000, // thinking time for follow-up
+  agentFollowupTyping: 5000, // typing time for follow-up agent message (1.5x faster)
   hold: 1000,
   reset: 1000,
 }
